@@ -1,0 +1,19 @@
+<h2>Películas</h2>
+<div *ngFor="let pelicula of peliculas">
+  <div>
+    <img [src]="pelicula.portada" alt="{{ pelicula.Titulo }}">
+    <h3>{{ pelicula.Titulo }}</h3>
+    <p>{{ pelicula.CalificacionRT}}</p>
+    <button routerLink="/mi">Ver información completa</button>
+  </div>
+</div>
+
+<h2>Series</h2>
+<div *ngFor="let serie of series">
+  <div>
+    <img [src]="serie.portada" alt="{{ serie.titulo }}">
+    <h3>{{ serie.titulo }}</h3>
+    <p>{{ serie.sinopsis }}</p>
+    <button routerLink="/mi">Ver información completa</button>
+  </div>
+</div>
