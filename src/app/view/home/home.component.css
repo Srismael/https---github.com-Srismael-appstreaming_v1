@@ -1,0 +1,162 @@
+/*
+*{
+    background-image: url("../assets/backgroung/fondo.jpg"); 
+    background-size: cover;
+    background-attachment: fixed; 
+}
+*/
+
+.container-Peliculas {
+    padding-bottom: 3%;
+}
+
+.container-Peliculas h1 {
+    padding-left: 3%;
+    font-size: 28px;
+}
+
+.peliculas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.col {
+    width: calc(25% - 20px); /* 25% del ancho con 20px de espacio entre columnas */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.col img {
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: -3px -2px 20px 0px #706f6fd6;
+}
+
+.col .pelicula-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 0 0 7px 7px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.col:hover .pelicula-info {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.col .pelicula-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.col .pelicula-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.col .pelicula-info button {
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.col .pelicula-info button:hover {
+    background-color: #0056b3;
+}
+
+.container-Peliculas {
+    padding-bottom: 3%;
+    padding-left: 20px; /* Añadir un poco de espacio a la izquierda */
+    padding-right: 20px; /* Añadir un poco de espacio a la derecha */
+}
+
+.peliculas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-left: -20px; /* Compensar el espacio adicional agregado al contenedor principal */
+    margin-right: -20px; /* Compensar el espacio adicional agregado al contenedor principal */
+}
+
+.col {
+    width: calc(25% - 20px); /* 25% del ancho con 20px de espacio entre columnas */
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px; /* Añadir un poco de espacio a la izquierda */
+    padding-right: 20px; /* Añadir un poco de espacio a la derecha */
+}
+
+
+/* esto es el cuerpo osea el catalogo de las peliculas
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+.lista-peliculas{
+    margin: 0;
+    padding: 3%;
+    display:  grid;
+    justify-content: center;
+    align-items: center;
+
+}
+.lista-peliculas h1{
+    font-size: 28px;  
+
+
+}
+.col img{
+    box-shadow: -3px -2px 20px 0px #706f6fd6;
+   
+}
+.col a img{
+    padding-bottom: 2%;
+    border-radius: 7px
+}
+.col a {
+    font-size: 18px;
+}
+.container{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+    
+}
+.container-Recomendado{
+    padding-bottom: 3%;
+}
+.container-Recomendado h1{
+    padding-left: 3%;
+}
+.container-Peliculas{
+    padding-bottom: 3%;
+}
+.container-Peliculas h1{
+    padding-left: 3%;
+}
+.container-Series{
+    padding-bottom: 3%;
+}
+.container-Series h1{
+    padding-left: 3%;
+}
+aqui finaliza el esto es el cuerpo osea el catalogo de las peliculas*/

@@ -1,0 +1,7 @@
+*{
+    background-size: cover;
+    background-attachment: fixed; 
+}
+body{
+    background-image: url("../assets/backgroung/fondo.jpg"); 
+}

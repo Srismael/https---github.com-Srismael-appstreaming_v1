@@ -1,4 +1,4 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<!--<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
   
     <div class="form-group">
@@ -12,4 +12,34 @@
     </div>
   
     <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-  </form>
+  </form>-->
+
+  
+  <div class="loginmallor">
+    <div id="contenedor">
+        <div id="contenedorcentrado">
+            <div id="login">
+              <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+                  <label for="correo">Correo electrónico</label>
+                    <input id="correo" type="email" class="form-control" formControlName="correo" placeholder="Correo" required>
+                    <label for="contrasenia">Contraseña</label>
+                    <input id="contrasenia" type="password" class="form-control" formControlName="contrasenia" placeholder="Contraseña" required>
+                    <input type="submit" class="btn btn-primary" value="Entrar" name="btningresar">
+                    <br>
+                </form>
+            </div>
+            <div id="derecho">
+                <div class="titulo">Bienvenido a IsamaStreaming Plus</div>
+                <hr>
+                <div class="pie-form">
+                    <a routerLink="#">¿Perdiste tu contraseña?</a>
+                    <a routerLink="sigup">¿No tienes Cuenta? Registrate</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  

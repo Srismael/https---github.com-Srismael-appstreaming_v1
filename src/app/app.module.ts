@@ -11,6 +11,8 @@ import { MiComponent } from './view/mi/mi.component';
 import { HomeComponent } from './view/home/home.component';
 import { UserComponent } from './view/user/user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './view/complemets/footer/footer.component';
+import { NavComponent } from './view/complemets/nav/nav.component';
 
 
 const routes: Routes =[
@@ -30,7 +32,9 @@ const routes: Routes =[
     SigupComponent,
     MiComponent,
     HomeComponent,
-    UserComponent
+    UserComponent,
+    FooterComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,182 @@
+
+usuarios
+db.usuarios.insertMany([
+{
+"nombre_usuario": "Ismael",
+"correo": "ismaelmtzballin@gmail.com",
+"contrasenia": "taco1234",
+"pelicula_vistas":[],
+"foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flol.fandom.com%2Fwiki%2FSkyshock&psig=AOvVaw17uon9NQDCn6HXP4Jizg9s&ust=1708709981401000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCMiu6-v4QDFQAAAAAdAAAAABAE",
+"listas": [
+{"nombre": "", "peliculas": ["", ""]}
+
+]
+}
+])
+
+
+
+peliculas
+db.peliculas.insertMany ([
+  {
+"Titulo": "END GAME",
+"Genero": ["Accion", "Aventura"],
+"anio": 2019,
+"CalificacionRT": 9.5,
+"Comentarios": [
+  {"usuario": "", "contenido": "", "fecha": new Date("")},
+],
+"estrellas_usuario": [
+  {"usuario": "", "Calificacion": 0},
+],
+"portada" : "https://www.ecartelera.com/carteles/8900/8902/041_m.jpg"
+{
+])
+
+db.peliculas.insertMany ([
+  {
+"Titulo": "TED",
+"Genero": ["Comedia", "Fantasia"],
+"anio": 2012,
+"CalificacionRT": 7.3,
+"Comentarios": [
+  {"usuario": "", "contenido": "", "fecha": new Date("")},
+],
+"estrellas_usuario": [
+  {"usuario": "", "Calificacion": 0},
+],
+"portada" : "https://www.ecartelera.com/carteles/4700/4726/002_m.jpg"
+}
+])
+
+db.peliculas.insertMany ([
+  {
+"Titulo": "MEGAN",
+"Genero": ["Terror", "Ciencia Ficcion"],
+"anio": 2022,
+"CalificacionRT": 9.3,
+"Comentarios": [
+  {"usuario": "", "contenido": "", "fecha": new Date("")},
+],
+"estrellas_usuario": [
+  {"usuario": "", "Calificacion": 0},
+],
+"portada" : "https://www.ecartelera.com/carteles/17400/17462/002_m.jpg"
+}
+])
+
+db.peliculas.insertMany ([
+  {
+"Titulo": "PASAJEROS",
+"Genero": ["Romance", "Ciencia Ficcion"],
+"anio": 2016,
+"CalificacionRT": 3.0,
+"Comentarios": [
+  {"usuario": "", "contenido": "", "fecha": new Date("")},
+],
+"estrellas_usuario": [
+  {"usuario": "", "Calificacion": 0},
+],
+"portada" : "https://www.ecartelera.com/carteles/10200/10234/003_m.jpg"
+}
+])
+
+series
+db.series.insertMany ([
+  {
+"titulo": "stranger things",
+"genero": ["Suspenso", "Crimen", "Thriller"],
+"anio": 2016,
+"rottenTomatoes": 9.5,
+"fecha_estreno": new Date("2008-07-01"),
+"reparto": ["Millie Bobby Brown", "Noah Schnapp", "Finn Wolfhard"],
+"sinposis": "Cuando un niño desaparece, sus amigos, la familia y la policía se ven envueltos en una serie de eventos misteriosos al tratar de encontrarlo. Su ausencia coincide con el avistamiento de una criatura terrorífica y la aparición de una extraña niña.",
+"disponible_en_netflix": true,
+"portada": "https://es.web.img2.acsta.net/r_1280_720/pictures/16/11/25/09/38/178576.jpg?coixp=50&coiyp=40",
+"temporadas": {
+    "total": 5,
+    "detalles": [
+    {"numero": 1, "episodios": 7 },
+    {"numero": 2, "episodios": 13 },
+    {"numero": 3, "episodios": 13 },
+    {"numero": 4, "episodios": 13 }
+]
+}
+}
+])
+
+db.series.insertMany ([
+  {
+"titulo": "The Mandalorian",
+"genero": ["Accion", "Ciencia ficcion"],
+"anio": 2019,
+"rottenTomatoes": 9.0,
+"fecha_estreno": new Date("2019-11-12"),
+"reparto": ["Pedro Pascal", "Katee Sackhoff", "Carl Weathers"],
+"sinposis": "La primera misión que tendrá que llevar a cabo este guerrero mandaloriano, a parte de las muchas y grandes luchas que tendrá que vivir en el espacio, es la de buscar hasta encontrar a un niño para después, matarlo. Pero este guerrero se niega a hacerlo, y lo convierte en su aprendiz.",
+"disponible_en_netflix": false,
+"portada": "https://es.web.img3.acsta.net/pictures/20/12/07/10/10/0341334.jpg",
+"temporadas": {
+    "total": 3,
+    "detalles": [
+    {"numero": 1, "episodios": 8 },
+    {"numero": 2, "episodios": 8 },
+    {"numero": 3, "episodios": 8 }
+]
+}
+}
+])
+
+db.series.insertMany ([
+  {
+"titulo": "Adventure Time",
+"genero": ["Aventura", "Animacion", "Ciencia Ficcion"],
+"anio": 2010,
+"rottenTomatoes": 10.0,
+"fecha_estreno": new Date("2010-04-05"),
+"reparto": ["Jeremy Shada", "John DiMaggio", "Hynden Walch", "Tom Kenny"],
+"sinposis": "La serie sigue las aventuras de Finn, un adolescente, y su mejor amigo Jake, un perro con poderes mágicos capaz de cambiar de forma, aumentar de tamaño y estirarse a voluntad. Finn y Jake viven en la post-apocalíptica Tierra de Ooo, en donde día a día deben lidiar con criaturas mágicas.",
+"disponible_en_netflix": true,
+"portada": "https://es.web.img3.acsta.net/pictures/14/04/22/09/03/422873.jpg",
+"temporadas": {
+    "total": 10,
+    "detalles": [
+    {"numero": 1, "episodios": 26 },
+    {"numero": 2, "episodios": 26 },
+		{"numero": 3, "episodios": 26 },
+    {"numero": 4, "episodios": 26 },
+		{"numero": 5, "episodios": 52 },
+    {"numero": 6, "episodios": 43 },
+		{"numero": 7, "episodios": 26 },
+    {"numero": 8, "episodios": 27 },
+		{"numero": 9, "episodios": 14 },
+    {"numero": 10, "episodios": 13 }
+]
+}
+}
+])
+
+b.series.insertMany ([
+  {
+"titulo": "Black Mirror",
+"genero": ["Thriller", "Drama", "Ciencia Ficcion"],
+"anio": 2011,
+"rottenTomatoes": 8.3,
+"fecha_estreno": new Date("2011-12-04"),
+"reparto": ["Daniel Lapaine", "Hannah John-Kamen", "Michaela Coel", "Daniel Kaluuya"],
+"sinposis": "La serie sigue las aventuras de Finn, un adolescente, y su mejor amigo Jake, un perro con poderes mágicos capaz de cambiar de forma, aumentar de tamaño y estirarse a voluntad. Finn y Jake viven en la post-apocalíptica Tierra de Ooo, en donde día a día deben lidiar con criaturas mágicas.",
+"disponible_en_netflix": true,
+"portada": "https://mx.web.img3.acsta.net/pictures/19/06/05/14/11/0714172.jpg",
+"temporadas": {
+    "total": 6,
+    "detalles": [
+    {"numero": 1, "episodios": 3 },
+    {"numero": 2, "episodios": 3 },
+		{"numero": 3, "episodios": 6 },
+    {"numero": 4, "episodios": 6 },
+		{"numero": 5, "episodios": 3 },
+    {"numero": 6, "episodios": 5 }
+]
+}
+}
+])

@@ -1,0 +1,13 @@
+/* para colocar foto de perfil*/
+.perfil-container {
+    width: 55px; /* Ajusta el tamaño según tu preferencia */
+    height: 55px;
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
+    margin-right: 40px; /* Espacio entre la imagen y el formulario de búsqueda */
+  }
+  .perfil-img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  /* aqui finalisa el para colocar foto de perfil*/

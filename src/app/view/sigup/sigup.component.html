@@ -1,4 +1,4 @@
-<form [formGroup]="nuevoUsuario" (ngSubmit)="onSubmit()">
+<!--<form [formGroup]="nuevoUsuario" (ngSubmit)="onSubmit()">
     <label for="nombre_usuario">Nombre de usuario</label>
     <input type="text" id="nombre_usuario" formControlName="nombre_usuario">
   
@@ -9,4 +9,31 @@
     <input type="password" id="contrasenia" formControlName="contrasenia">
   
     <button type="submit" [disabled]="nuevoUsuario.invalid">Registrar</button>
-  </form>
+  </form>-->
+
+  <div id="contenedor">
+  <div id="contenedorcentrado">
+  <div class="formulariomallor">
+<form [formGroup]="nuevoUsuario" (ngSubmit)="onSubmit()" class="formulario" method="post">
+    <h1>Registrate</h1>
+    <a class="contenedor">
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" id="nombre_usuario" formControlName="nombre_usuario" placeholder="NOMBRE DE USUARIO" name="usuario" required>
+        </div>
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" id="correo" formControlName="correo" placeholder="CORREO" name="correo" required>
+        </div>
+        <div class="input-contenedor">
+            <i class="fas fa-key icon"></i>
+            <input type="password" id="contrasenia" formControlName="contrasenia" placeholder="CONTRASEÑA" name="pass" required>
+        </div>
+        <input class="button" type="submit" value="Registrar" name="btnregistrar" [disabled]="nuevoUsuario.invalid">
+    </a>
+    <p>¿Ya tienes una cuenta?<a routerLink=""> Iniciar Sesion</a></p>
+    
+</form>
+</div>
+</div>
+</div>

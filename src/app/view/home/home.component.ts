@@ -3,6 +3,8 @@ import { SeriesService } from 'src/app/services/series.service';
 import { PeliculasService } from 'src/app/services/peliculas.service';
 import { Pelicula } from 'src/app/model/pelicula';
 import { Serie } from 'src/app/model/serie';
+import { NavComponent } from '../complemets/nav/nav.component';
+import { FooterComponent } from '../complemets/footer/footer.component';
 
 @Component({
   selector: 'app-home',
