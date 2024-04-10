@@ -40,4 +40,8 @@ export class UsuariosService {
   login(correo: string, contrasenia: string): Observable<any> {
     return this.http.post<any>(`${this.apiUrl}/login`, { correo, contrasenia });
   }
+
+  cambiarContrasenia(correo: string, contraseniaActual: string, nuevaContrasenia: string): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/cambiar_contrasenia`, { correo, contrasenia_actual: contraseniaActual, nueva_contrasenia: nuevaContrasenia });
+  }
 }

@@ -1,0 +1,18 @@
+<div *ngIf="serie">
+    <h1>{{ serie.titulo }}</h1>
+    <img [src]="serie.portada" alt="Portada de la serie">
+    <p>Género: {{ serie.genero }}</p>
+    <p>Año: {{ serie.anio }}</p>
+    <p>Calificación: {{ serie.rottenTomatoes }}</p>
+    <h2>Reparto</h2>
+    <ul>
+      <li *ngFor="let actor of serie.reparto">
+        {{ actor }}
+      </li>
+    </ul>
+    <p>Sinopsis: {{ serie.sinposis }}</p>
+    
+    <button (click)="borrarSerie()">Borrar Serie</button>
+</div>
+  
+

@@ -29,6 +29,10 @@ export class SeriesService {
   }
 
   eliminarUsuario(serieId: number): Observable<any> {
-    return this.http.delete(`${this.apiUrl}/series/${serieId}`);
+    return this.http.delete(`${this.apiUrl}/serie/${serieId}`);
+  }
+
+  obtenerSeriePorTitulo(titulo: string): Observable<Serie> {
+    return this.http.get<Serie>(`${this.apiUrl}/titulo/${encodeURIComponent(titulo)}`);
   }
 }

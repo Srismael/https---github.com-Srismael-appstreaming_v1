@@ -13,6 +13,8 @@ import { UserComponent } from './view/user/user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './view/complemets/footer/footer.component';
 import { NavComponent } from './view/complemets/nav/nav.component';
+import { ChangePasswordComponent } from './view/change-password/change-password.component';
+import { MsComponent } from './view/ms/ms.component';
 
 
 const routes: Routes =[
@@ -20,7 +22,9 @@ const routes: Routes =[
   {path: 'home', component: HomeComponent},
   {path: 'sigup', component: SigupComponent},
   {path: 'user', component: UserComponent},
-  {path: 'mi', component: MiComponent}
+  {path: 'MI/:Titulo', component: MiComponent },
+  {path: 'MS/:titulo', component: MsComponent },
+  {path: 'change-password', component: ChangePasswordComponent}
 
 ]
 
@@ -34,7 +38,9 @@ const routes: Routes =[
     HomeComponent,
     UserComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    ChangePasswordComponent,
+    MsComponent
   ],
   imports: [
     BrowserModule,

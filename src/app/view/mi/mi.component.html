@@ -1,0 +1,36 @@
+<div *ngIf="pelicula">
+    <h1>{{ pelicula.Titulo }}</h1>
+    <img [src]="pelicula.portada" alt="Portada de la película">
+    <p>Género: {{ pelicula.Genero.join(', ') }}</p>
+    <p>Año: {{ pelicula.anio }}</p>
+    <p>Calificación RT: {{ pelicula.CalificacionRT }}</p>
+    <h2>Comentarios</h2>
+    <ul>
+        <li *ngFor="let comentario of pelicula.Comentarios">
+            <p>{{ comentario.usuario }} dijo:</p>
+            <p>{{ comentario.contenido }}</p>
+            <p>Fecha: {{ comentario.fecha | date:'medium' }}</p>
+        </li>
+    </ul>
+    <h2>Calificaciones de Usuarios</h2>
+    <ul>
+        <li *ngFor="let rating of pelicula.estrellas_usuario">
+            <p>{{ rating.usuario }} calificó con: {{ rating.Calificacion }}</p>
+        </li>
+    </ul>
+    <h2>Agregar Comentario</h2>
+<form (submit)="agregarComentario()">
+    <div>
+        <label for="usuarioInput">Usuario:</label>
+        <input type="text" id="usuarioInput" name="usuario" [(ngModel)]="nuevoComentario.usuario">
+    </div>
+    <div>
+        <label for="contenidoInput">Contenido:</label>
+        <textarea id="contenidoInput" name="contenido" [(ngModel)]="nuevoComentario.contenido"></textarea>
+    </div>
+    <button type="submit">Agregar Comentario</button>
+</form>
+
+
+    <button (click)="borrarPelicula()">Borrar Película</button>
+</div>

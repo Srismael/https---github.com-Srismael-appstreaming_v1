@@ -24,12 +24,16 @@ export class PeliculasService {
     return this.http.post(`${this.apiUrl}/peliculas`, usuario);
   }
 
-  actualizarUsuario(peliculaId: number, pelicula: Pelicula): Observable<any> {
-    return this.http.put(`${this.apiUrl}/peliculas/${peliculaId}`, pelicula);
+  actualizarPelicula(peliculaId: number, pelicula: Pelicula): Observable<any> {
+    return this.http.put(`${this.apiUrl}/pelicula/${peliculaId}`, pelicula);
   }
 
-  eliminarUsuario(peliculaId: number): Observable<any> {
-    return this.http.delete(`${this.apiUrl}/peliculas/${peliculaId}`);
+  eliminarPelicula(peliculaId: number): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/pelicula/${peliculaId}`);
+  }
+  obtenerPeliculaPorTitulo(titulo: string): Observable<Pelicula> {
+    // Modifica la URL de la solicitud para buscar por título en lugar de por ID
+    return this.http.get<Pelicula>(`${this.apiUrl}/peliculas/titulo/${titulo}`);
   }
 }
 

@@ -1,4 +1,5 @@
 export interface Pelicula {
+    _id: number;
     Titulo: string;
     Genero: string[];
     anio: number;
